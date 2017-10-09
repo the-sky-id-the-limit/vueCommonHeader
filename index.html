@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vue.jsを使った共通ヘッダーの実装</title>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="app">
+		<div class="container">
+      <vue-header-item></vue-header-item>
+      <router-view></router-view>
+		</div><!-- .container -->
+	</div>
+</body>
+<script src="js/vueComponent.js"></script>
+<script src="js/router.js"></script>
+<script>
+	// Vueインスタンス作成
+	var app = new Vue({
+		el : "#app",
+		router
+	})
+</script>
+</html>

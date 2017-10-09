@@ -1,0 +1,23 @@
+.vue-header {
+    list-style: none;
+    text-align: center;
+}
+
+.vue-header li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.vue-header-main {
+    text-align: center
+}
+
+.vue-header li:hover {
+    color: red;
+}
+
+.vue-header .router-link-exact-active {
+    color: red;
+}
